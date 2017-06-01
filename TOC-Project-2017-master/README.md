@@ -1,8 +1,8 @@
 # THEORY OF COMPUTATION Final Project 2017
 
-chatbot name：     ading(阿丁)
-chatbot username： a_ding_bot
-主題：和心理健康有關的聊天機器人
+* chatbot name：     ading(阿丁)
+* chatbot username： a_ding_bot
+* 主題：和心理健康有關的聊天機器人
 
 ## How to run my code
 
