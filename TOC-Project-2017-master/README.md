@@ -93,4 +93,3 @@ python3 app.py
 * 就看的到圖片
 ## Author
 F74032049 林千筑 
-
