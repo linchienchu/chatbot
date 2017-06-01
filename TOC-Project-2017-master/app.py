@@ -7,8 +7,8 @@ from flask import Flask, request, send_file
 from fsm import TocMachine
 
 
-API_TOKEN = '387701347:AAHeLdv5616pB7065craXgl-xcsjDYmF0FI'
-WEBHOOK_URL = 'https://62b78e41.ngrok.io/hook'
+API_TOKEN = 'YOUR API_TOKEN'
+WEBHOOK_URL = 'YOUR WEBHOOK_URL'
 
 app = Flask(__name__)
 bot = telegram.Bot(token=API_TOKEN)
