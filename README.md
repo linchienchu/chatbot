@@ -60,7 +60,7 @@ python3 app.py
 ## How to interact with my chatbot
 
 ### Finite State Machine
-![fsm](./Desktop/show-fsm.png)
+![fsm](C:\Users\User\Desktop\show-fsm.png)
 
 
 ## Author
