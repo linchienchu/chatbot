@@ -1,19 +1,19 @@
 # THEORY OF COMPUTATION Final Project 2017
 
-chatbot name¡G     ading(ªü¤B)
-chatbot username¡G a_ding_bot
-¥DÃD¡G©M¤ß²z°·±d¦³Ãöªº²á¤Ñ¾÷¾¹¤H
+chatbot nameï¼š     ading(é˜¿ä¸)
+chatbot usernameï¼š a_ding_bot
+ä¸»é¡Œï¼šå’Œå¿ƒç†å¥åº·æœ‰é—œçš„èŠå¤©æ©Ÿå™¨äºº
 
 ## How to run my code
 
-### ¾Ş§@Àô¹Ò
-* µêÀÀ¾÷¡GOracle VM VirtualBox
-* Ubuntu Linux 32¦ì¤¸
+### æ“ä½œç’°å¢ƒ
+* è™›æ“¬æ©Ÿï¼šOracle VM VirtualBox
+* Ubuntu Linux 32ä½å…ƒ
 
-### Pythonª©¥»
+### Pythonç‰ˆæœ¬
 * Python 3
 
-### requirements.txt¤º®e
+### requirements.txtå…§å®¹
 Flask==0.12.1
 transitions==0.5.0
 pygraphviz==1.3.1
@@ -23,21 +23,21 @@ python-telegram-bot==5.3.0
 ```sh
 sudo pip3 install -r requirements.txt
 ```
-* »İ¦w¸Ë pygraphviz©M?transitions?¥H¤ÎFlask©Mpython-telegram-bot©Mngrok
-* §ÚÁÙ¦³¥t¥~¸ütelegram Desktop https://desktop.telegram.org/ ?ª©¥»¬°linux 32bit
+* éœ€å®‰è£ pygraphvizå’Œ?transitions?ä»¥åŠFlaskå’Œpython-telegram-botå’Œngrok
+* æˆ‘é‚„æœ‰å¦å¤–è¼‰telegram Desktop https://desktop.telegram.org/ ?ç‰ˆæœ¬ç‚ºlinux 32bit
 
 ### Step2 Secret Data
 
 `API_TOKEN` and `WEBHOOK_URL` in app.py **MUST** be set to proper values.
 
 ### Step3 Run ngrok
-1.»İ¥Ó½Ğ±b¸¹¡A¤U¸üngrok
-2.¶}±Òterminal
+1.éœ€ç”³è«‹å¸³è™Ÿï¼Œä¸‹è¼‰ngrok
+2.é–‹å•Ÿterminal
 
 ```sh
 ./ngrok authtoken token
 ```
-* token ¬O§A¥Ó½Ğªº
+* token æ˜¯ä½ ç”³è«‹çš„
 
 ```sh
 ./ngrok http 5000
@@ -47,13 +47,13 @@ After that, `ngrok` would generate a `https` URL.
 
 You should set `WEBHOOK_URL` (in app.py) to `'your-https-URL/hook`.
 
-### step4 Run the sever
-* ¶i¤J±M®×ªº¸ê®Æ§¨
+### Step4 Run the sever
+* é€²å…¥å°ˆæ¡ˆçš„è³‡æ–™å¤¾
 ```sh
 python3 app.py
 ```
-### step5 Run telegram¡AµM«á¶}©l¹ï¸Ü
-§Ú¬O¥Îtelegram Desktop¡A¦bterminal¤W°õ¦æ
+### Step5 Run telegramï¼Œç„¶å¾Œé–‹å§‹å°è©±
+æˆ‘æ˜¯ç”¨telegram Desktopï¼Œåœ¨terminalä¸ŠåŸ·è¡Œ
 ```sh
 ./Telegram
 ```
@@ -62,24 +62,35 @@ python3 app.py
 ### Finite State Machine
 ![fsm](./img/show-fsm.png)
 
-### ¦p¦ó¶i¤Jstate1
-¥DÃD¡G¥\¯à¬O§Æ±æÀ°§U¨Ï¥ÎªÌ§PÂ_·í¤Uªº¤ß±¡¡A¨Ãµ¹¤©«ØÄ³
-¿é¤J¥]§t'¤ß±¡'©Î'À£¤O'ªº¤@¥y¸Ü¡A¤Ç¦p¤ß±¡¤£¦n©ÎÀ£¤O«Ü¤j¡A·|¶i¤Jstate1
-µM«á¾÷¾¹¤H·|°İ§AÃö©ó¤ß±¡¶qªíªº°İÃD¡A¦^µª§¹·|¶i¤Jstate4±µµÛÃş¦üªº°İÃD¦b¶i¤Jstate5µM«ástate6
-state6·|µ¹¨Ï¥ÎªÌ¨Ì¨Ç¤ß±¡¤Wªº«ØÄ³¡AµM«á¦^¨ìuser
+### å¦‚ä½•é€²å…¥state1
+ä¸»é¡Œï¼šåŠŸèƒ½æ˜¯å¸Œæœ›å¹«åŠ©ä½¿ç”¨è€…åˆ¤æ–·ç•¶ä¸‹çš„å¿ƒæƒ…ï¼Œä¸¦çµ¦äºˆå»ºè­°
+è¼¸å…¥åŒ…å«'å¿ƒæƒ…'æˆ–'å£“åŠ›'çš„ä¸€å¥è©±ï¼ŒåŒ¹å¦‚å¿ƒæƒ…ä¸å¥½æˆ–å£“åŠ›å¾ˆå¤§ï¼Œæœƒé€²å…¥state1
+ç„¶å¾Œæ©Ÿå™¨äººæœƒå•ä½ é—œæ–¼å¿ƒæƒ…é‡è¡¨çš„å•é¡Œï¼Œå›ç­”å®Œæœƒé€²å…¥state4æ¥è‘—é¡ä¼¼çš„å•é¡Œåœ¨é€²å…¥state5ç„¶å¾Œstate6
+state6æœƒçµ¦ä½¿ç”¨è€…ä¾äº›å¿ƒæƒ…ä¸Šçš„å»ºè­°ï¼Œç„¶å¾Œå›åˆ°user
 
-### ¦p¦ó¶i¤Jstate2
-¥DÃD¡G¥\¯à¬O§Æ±æ¨Ï¥ÎªÌ¯à¥X¥h¨«¨«¡A¨Ã±ÀÂË¤@¨Ç¤W¬M¤¤ªº¹q¼v
-¿é¤J¥]§t'¥h­ş¸Ì'©Î'ª±'ªº¤@¥y¸Ü¡A¤Ç¦p³Ìªñ­n¥h­ş¸Ìª±¡A·|¶i¤Jstate2
-¾÷¾¹¤H·|°İ·Q¤£·Q¬İ¹q¼v¡A¦pªG¦^µª¥]§t'¦n'©Î'OK'©Î'¦³¤°»ò'ªº¤@¥y¸Ü¡A¤Ç¦p¦³¤°»ò¹q¼v
-·|¶i¤Jstate7¡A¾÷¾¹¤H·|¥h¤Wºôª¦ÂÎ§ì¥¿¦b¤W¬M¤¤ªº¹q¼v¤ù¦W
-¦pªG¦^µª¥]§t'¤£'©Î'No'©Î'no'©Î'NO'ªº¤@¥y¸Ü¡A·|¶i¤Jstate8¡AµM«á¾÷¾¹¤H·|¦^µª'¦n§a'¡AµM«á¦^¨ìuser
+### å¦‚ä½•é€²å…¥state2
+ä¸»é¡Œï¼šåŠŸèƒ½æ˜¯å¸Œæœ›ä½¿ç”¨è€…èƒ½å‡ºå»èµ°èµ°ï¼Œä¸¦æ¨è–¦ä¸€äº›ä¸Šæ˜ ä¸­çš„é›»å½±
+è¼¸å…¥åŒ…å«'å»å“ªè£¡'æˆ–'ç©'çš„ä¸€å¥è©±ï¼ŒåŒ¹å¦‚æœ€è¿‘è¦å»å“ªè£¡ç©ï¼Œæœƒé€²å…¥state2
+æ©Ÿå™¨äººæœƒå•æƒ³ä¸æƒ³çœ‹é›»å½±ï¼Œå¦‚æœå›ç­”åŒ…å«'å¥½'æˆ–'OK'æˆ–'æœ‰ä»€éº¼'çš„ä¸€å¥è©±ï¼ŒåŒ¹å¦‚æœ‰ä»€éº¼é›»å½±
+æœƒé€²å…¥state7ï¼Œæ©Ÿå™¨äººæœƒå»ä¸Šç¶²çˆ¬èŸ²æŠ“æ­£åœ¨ä¸Šæ˜ ä¸­çš„é›»å½±ç‰‡å
+å¦‚æœå›ç­”åŒ…å«'ä¸'æˆ–'No'æˆ–'no'æˆ–'NO'çš„ä¸€å¥è©±ï¼Œæœƒé€²å…¥state8ï¼Œç„¶å¾Œæ©Ÿå™¨äººæœƒå›ç­”'å¥½å§'ï¼Œç„¶å¾Œå›åˆ°user
 
-### ¦p¦ó¶i¤Jstate3
-¥DÃD¡G¥\¯à¬O§Æ±æ¯à¼½©ñ¤@¨Ç·d¯ºµu¤ù¡AÀ°§U¨Ï¥ÎªÌÓVÀ£
-¿é¤J¥]§t'µL²á'©Î'·d¯º'©Î'µu¤ù'ªº¤@¥y¸Ü¡A¤Ç¦p»¡³Ìªñ¦nµL²á
-·|¶i¤Jstate3¡A¾÷¾¹¤H·|¶Ç°e¤@¨Ç·d¯ºµu¤ù¡AµM«á¦^¨ìuser
+### å¦‚ä½•é€²å…¥state3
+ä¸»é¡Œï¼šåŠŸèƒ½æ˜¯å¸Œæœ›èƒ½æ’­æ”¾ä¸€äº›æç¬‘çŸ­ç‰‡ï¼Œå¹«åŠ©ä½¿ç”¨è€…ç´“å£“
+è¼¸å…¥åŒ…å«'ç„¡èŠ'æˆ–'æç¬‘'æˆ–'çŸ­ç‰‡'çš„ä¸€å¥è©±ï¼ŒåŒ¹å¦‚èªªæœ€è¿‘å¥½ç„¡èŠ
+æœƒé€²å…¥state3ï¼Œæ©Ÿå™¨äººæœƒå‚³é€ä¸€äº›æç¬‘çŸ­ç‰‡ï¼Œç„¶å¾Œå›åˆ°user
 
+## How to show fsm
+### Step1
+* åŸ·è¡Œç¨‹å¼
+```sh
+python3 app.py
+```
+### Step2
+* é–‹å•Ÿç€è¦½å™¨
+### Step3
+* è¼¸å…¥your-https-URL/show-fsm
+* å°±çœ‹çš„åˆ°åœ–ç‰‡
 ## Author
-F74032049 ªL¤dµ® 
+F74032049 æ—åƒç­‘ 
 
