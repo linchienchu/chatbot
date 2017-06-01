@@ -1,5 +1,7 @@
 # THEORY OF COMPUTATION Final Project 2017
 
+# THEORY OF COMPUTATION Final Project 2017
+
 chatbot name：     ading(阿丁)
 chatbot username： a_ding_bot
 主題：和心理健康有關的聊天機器人
@@ -23,8 +25,8 @@ python-telegram-bot==5.3.0
 ```sh
 sudo pip3 install -r requirements.txt
 ```
-* 需安裝 pygraphviz和 transitions 以及Flask和python-telegram-bot和ngrok
-* 我還有另外載telegram Desktop https://desktop.telegram.org/  版本為linux 32bit
+* 需安裝 pygraphviz和?transitions?以及Flask和python-telegram-bot和ngrok
+* 我還有另外載telegram Desktop https://desktop.telegram.org/ ?版本為linux 32bit
 
 ### Step2 Secret Data
 
@@ -47,12 +49,12 @@ After that, `ngrok` would generate a `https` URL.
 
 You should set `WEBHOOK_URL` (in app.py) to `'your-https-URL/hook`.
 
-### step4 Run the sever
+### Step4 Run the sever
 * 進入專案的資料夾
 ```sh
 python3 app.py
 ```
-### step5 Run telegram，然後開始對話
+### Step5 Run telegram，然後開始對話
 我是用telegram Desktop，在terminal上執行
 ```sh
 ./Telegram
@@ -80,6 +82,17 @@ state6會給使用者依些心情上的建議，然後回到user
 輸入包含'無聊'或'搞笑'或'短片'的一句話，匹如說最近好無聊
 會進入state3，機器人會傳送一些搞笑短片，然後回到user
 
+## How to show fsm
+### Step1
+* 執行程式
+```sh
+python3 app.py
+```
+### Step2
+* 開啟瀏覽器
+### Step3
+* 輸入your-https-URL/show-fsm
+* 就看的到圖片
 ## Author
 F74032049 林千筑 
 
